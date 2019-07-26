@@ -21,12 +21,12 @@ public class HelloControllerTest {
     @Autowired
     private MockMvc mvc;
 
-    @Test
+/*    @Test
     public void errorTest() throws Exception {
         mvc.perform(MockMvcRequestBuilders.get("/").accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().string(equalTo("Greetings from Spring Boot!")));
-    }
+    }*/
 
     @Test
     public void correctTest() throws Exception {

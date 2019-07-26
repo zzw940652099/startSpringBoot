@@ -2,12 +2,12 @@ group 'com.hwason.service'
 version '1.0-SNAPSHOT'
 
 ext {
-    springBootVersion = '1.5.11.RELEASE'
+    springBootVersion = '2.1.6.RELEASE'
 }
 
 buildscript {
     ext {
-        springBootVersion = '1.5.11.RELEASE'
+        springBootVersion = '2.1.6.RELEASE'
     }
 
     repositories {
@@ -21,7 +21,8 @@ buildscript {
 
 apply plugin: 'idea'
 apply plugin: 'java'
-apply plugin: 'spring-boot'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
