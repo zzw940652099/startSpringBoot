@@ -1,0 +1,36 @@
+group 'com.hwason.service'
+version '1.0-SNAPSHOT'
+
+ext {
+    springBootVersion = '1.5.11.RELEASE'
+}
+
+buildscript {
+    ext {
+        springBootVersion = '1.5.11.RELEASE'
+    }
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:$springBootVersion")
+    }
+}
+
+apply plugin: 'idea'
+apply plugin: 'java'
+apply plugin: 'spring-boot'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.springframework.boot:spring-boot-starter-web:$springBootVersion"
+    compile "org.springframework.boot:spring-boot-starter-test:$springBootVersion"
+}
